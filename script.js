@@ -2,8 +2,6 @@ let minArray = ["hej", "då", "du", "jag", "vi", "ni", "dem", "spela", "träna",
 
 let userArray = [];
 
-//console.log(minArray);
-
 let minContainer = document.getElementById("container");
 
 let minContainer2 = document.getElementById("container2");
@@ -17,19 +15,17 @@ for (let i = 0; i < minArray.length; i++) {
 
 minContainer.addEventListener("click", e => {
         let valdOrd = e.target.innerText;
-        //console.log(e.target.innerText);
         userArray.push(valdOrd);
-
-        //console.log(userArray);
-
 });
 
 myBtn.addEventListener("click", function(){
+    
+    //userArray.join("");
+    
     minContainer2.append(userArray);
 
+    userArray = [];
 
-
-    //console.log(userArray);
 });
 
   
